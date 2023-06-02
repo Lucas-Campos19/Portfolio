@@ -4,30 +4,45 @@
     padding: 0;/*reset css, reset da margin e padding padrão do navegador*/
 }
 body{
-    height: 100vh;/*altura do corpo da página web 100% utilzando o viewport*/
     box-sizing: border-box;/*A propriedade box-sizing: border-box; é usada em CSS para controlar o modelo de caixa de um elemento.*/
     background-color: black ;/*define a cor de fundo do corpo da página web*/
     color: white
 }
-.texto-destacado{
-    color: #8EF5B4; /*destaque do elemento strong com uma cor diferente*/
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__links{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
 }
 .apresentacao{
-    margin: 10%;/*é usada para definir o espaço ao redor de um elemento. */
+    padding: 5% 15%;/*é usada para definir o espaço ao redor de um elemento. */
     display: flex; /*é usada para definir o tipo de exibição de um elemento.Ao definir display: flex em um elemento pai, todos os elementos filhos diretos desse elemento se tornam itens flexíveis. */
     align-items: center;
     justify-content: space-between;
+    
 }
 .apresentacao__conteudo{
     width: 614px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: space-between;
 }
 .apresentacao__conteudo__titulo{
     font-size: 36px;
     font-family: 'Krona One', sans-serif;;
 
+}
+.texto-destacado{
+    color: #8EF5B4; /*destaque do elemento strong com uma cor diferente*/
 }
 .apresentacao__conteudo__texto{
     font-size: 24px;
@@ -63,4 +78,42 @@ body{
 }
 .apresentacao__link__links:hover{
     background-color: #272727;
+}
+.rodape{
+    padding: 24px;
+    background-color: #22D4FD;
+    color: #000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.curriculo{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.curriculo__introducao{
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.curriculo__introducao__acesso__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5% ;
+}
+.curriculo__introducao__experiencias__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom:8%;
+}
+.curriculo__introducao__estudos__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom:8%;
 }
