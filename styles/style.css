@@ -27,7 +27,7 @@ body{
 }
 .cabecalho__menu__links{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -37,16 +37,17 @@ body{
     display: flex; /*é usada para definir o tipo de exibição de um elemento.Ao definir display: flex em um elemento pai, todos os elementos filhos diretos desse elemento se tornam itens flexíveis. */
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .apresentacao__conteudo{
-    width: 614px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: space-between;
 }
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria)
 
 }
@@ -54,7 +55,7 @@ body{
     color: var(--cor-quadriaria); /*destaque do elemento strong com uma cor diferente*/
 }
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
@@ -68,7 +69,7 @@ body{
 .apresentacao__conteudo__subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .apresentacao__link__links{
     /* background-color: #22D4FD; */
@@ -76,11 +77,11 @@ body{
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-secundaria);
     padding: 21.5px 0px;
     font-weight: 600;
@@ -89,13 +90,16 @@ body{
 .apresentacao__link__links:hover{
     background-color: var(--cor-hover);
 }
+.foto{
+    width: 50%;
+}
 .rodape{
     padding: 24px;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .curriculo{
@@ -111,19 +115,35 @@ body{
 }
 .curriculo__introducao__acesso__titulo{
     font-family: var(--fonte-secundaria);
-    font-size: 35px;
+    font-size: 2.18rem;
     font-weight: 600;
     margin-bottom: 5% ;
 }
 .curriculo__introducao__experiencias__titulo{
     font-family: var(--fonte-secundaria);
-    font-size: 35px;
+    font-size: 2.18rem;
     font-weight: 600;
     margin-bottom:8%;
 }
 .curriculo__introducao__estudos__titulo{
     font-family: var(--fonte-secundaria);
-    font-size: 35px;
+    font-size: 2.18rem;
     font-weight: 600;
     margin-bottom:8%;
+}
+@media(max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    
 }
